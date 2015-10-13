@@ -7,11 +7,11 @@ using namespace std;
 
 int main()
 {
-    srand((unsigned)time(0));
+    srand(time(NULL)); //Random Number
 
     int choice; //Declare variable integer type
 
-    int compchoice = rand()%2 + 1; //Generator random number(its ganerates a selection of numbers
+    int compchoice = rand()%2 + 0; //Generator random number(its ganerates a selection of numbers
                                    // from 0, 1, 2)
 
     cout << "Welcome to ~ Rock Paper Scissors ~!! I assume you know how to play,";
@@ -23,30 +23,24 @@ int main()
     if (choice == 0)
     {
         if (compchoice == 0)
-        cout << "\nIt's a tie!\n\n\n";
-        else if (compchoice == 1)
         cout << "\nPaper beats rock! Sorry, you lose!\n\n\n";
-        else if (compchoice == 2)
+        else if (compchoice == 1)
         cout << "\nRock beats scissors! You win!\n\n\n";
     }
 
     if (choice == 1)
     {
         if (compchoice == 0)
-        cout << "\nIt's a tie!\n\n\n";
-        else if (compchoice == 1)
         cout << "\nPaper beats rock! You win!\n\n\n";
-        else if (compchoice == 2)
+        else if (compchoice == 1)
         cout << "\nScissors beat paper! Sorry, you lose!\n\n\n";
    }
 
    if (choice == 2)
    {
         if (compchoice == 0)
-        cout << "\nIt's a tie!\n\n\n";
-        else if (compchoice == 1)
         cout << "\nScissors beat paper! You win!\n\n\n";
-        else if (compchoice == 2)
+        else if (compchoice == 1)
         cout << "\nRock beats scissors! Sorry, you lose!\n\n\n";
    }
 
